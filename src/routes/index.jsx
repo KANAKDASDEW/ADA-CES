@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Route, Redirect } from "react-router-dom";
 
 const AuthMiddleware = ({ layout:Layout, component: Page, isProtected, role, ...rest }) => {
-  const {user}= useSelector(state=> state.auth)
+const {user}= useSelector(state=> state.auth)
 
 console.log(user,"")
 

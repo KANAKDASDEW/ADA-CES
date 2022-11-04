@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaForward } from "react-icons/fa";
+import { FaUserAlt } from "react-icons/fa";
+import { FaAlgolia } from "react-icons/fa";
+import { FaDashcube } from "react-icons/fa";
 import ADA from "../image/ada.jpg";
 
 import "./admin.css";
@@ -9,7 +12,8 @@ const Admin = () => {
     return (
         <>
             <header>
-                <div className="container-fluid header_full"></div>
+                <div className="container-fluid header_full ">
+                </div>
             </header>
             <section>
                 <div className="container-fluid content_part_full">
@@ -25,19 +29,22 @@ const Admin = () => {
                             <div className="menu">
                                 <ul>
                                     <li>
-                                        <Link>Dashboard</Link>
+                                    <Link >
+                                      <span style={{marginRight: 10}}> < FaDashcube/></span>   
+                                            Dashboard
+                                        </Link>
                                     </li>
                                     <li>
-                                        <Link href="#">
-                                            <i className="fa fa-user-circle"></i>{" "}
+                                        <Link >
+                                      <span style={{marginRight: 10}}> < FaUserAlt/></span>   
                                             User
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Banner</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="#">Logout</Link>
+                                        <Link >
+                                      <span style={{marginRight: 10}}> < FaAlgolia/></span>   
+                                            Logout
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -47,7 +54,7 @@ const Admin = () => {
                                 <div className="col-md-12 bread">
                                     <ul>
                                         <li>
-                                            <Link>
+                                            <Link style={{ margin: 20}}>
                                                 Dashboard <FaForward />
                                             </Link>
                                         </li>

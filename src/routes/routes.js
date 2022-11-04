@@ -47,7 +47,7 @@ export const  publicRoutes=[
             path:"/login",
             name:"login",
             component:LogIn,
-            role:[ "*"]
+            role:[ "login"]
 
     },
     {

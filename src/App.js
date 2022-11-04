@@ -13,7 +13,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getUserFromLocalStorage } from './Redux/Auth/authSlice';
 
 function App() {
-  const [userInfo, setUserInfo]=useState({role:"child"})
+  const [userInfo, setUserInfo]=useState({role:"login"})
 const {user}= useSelector(state=> state.auth)
 const dispatch = useDispatch()
 
@@ -29,10 +29,7 @@ useEffect(()=>{
 
   return (
     <>
-
-<Router>
-
-      
+<Router> 
      <Switch>
         {
         privateRoutes.map((route,index)=>{
@@ -42,7 +39,7 @@ useEffect(()=>{
           role={route.role}  
           path={route.path} 
           isProtected={true}
-           component={route.component}    />
+          component={route.component}    />
         })
         }
         {
@@ -58,11 +55,10 @@ useEffect(()=>{
            component={route.component}    />
         })
         }
-      
+
         <Route path="/*" component={Page404} /> 
-           
-          
-            </Switch>
+
+       </Switch>
    
     </Router>  
     </>

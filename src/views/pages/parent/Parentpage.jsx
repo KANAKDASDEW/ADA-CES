@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Helmet from "../Helmet/Helmet";
 import CommonSection from "../common-section/CommonSection";
-import './Parentpage.css';
 
 const Parentpage = () => {
     return (
