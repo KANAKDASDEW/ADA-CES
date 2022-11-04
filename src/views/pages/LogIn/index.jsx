@@ -5,7 +5,7 @@ import CommonSection from "../common-section/CommonSection";
 import "./login.css";
 import { useDispatch } from "react-redux";
 import { authLogin } from "../../../Redux/Auth/authSlice";
-import { LOCAL_STORAGE_AUTH_KEY } from "../../../const/const";
+import { LOCAL_STORAGE_AUTH_KEY } from "../../../const/Const";
 import { useHistory } from "react-router-dom";
 const Login = () => {
 
@@ -27,13 +27,8 @@ const Login = () => {
         history.push(`/${data.role}`)
 
    dispatch(authLogin({data}))
-   localStorage.setItem(LOCAL_STORAGE_AUTH_KEY, JSON.stringify(data))
-
-        
+   localStorage.setItem(LOCAL_STORAGE_AUTH_KEY, JSON.stringify(data))     
     };
-
-
-
 
     return (
         <>

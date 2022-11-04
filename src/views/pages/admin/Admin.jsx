@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaForward} from 'react-icons/fa';
+import { FaForward } from "react-icons/fa";
 import ADA from "../image/ada.jpg";
 
 import "./admin.css";
@@ -25,9 +25,7 @@ const Admin = () => {
                             <div className="menu">
                                 <ul>
                                     <li>
-                                        <a href="#">
-                                            <i className="fa fa-home"></i> Dashboard
-                                        </a>
+                                        <Link>Dashboard</Link>
                                     </li>
                                     <li>
                                         <Link href="#">
@@ -36,16 +34,10 @@ const Admin = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#">
-                                            <i className="fa fa-bandcamp"></i>{" "}
-                                            Banner
-                                        </Link>
+                                        <Link href="#">Banner</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">
-                                            <i className="fa fa-power-off"></i>{" "}
-                                            Logout
-                                        </Link>
+                                        <Link href="#">Logout</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -56,10 +48,9 @@ const Admin = () => {
                                     <ul>
                                         <li>
                                             <Link>
-                                             Dashboard <FaForward/>
+                                                Dashboard <FaForward />
                                             </Link>
                                         </li>
-                                      
                                     </ul>
                                 </div>
                             </div>

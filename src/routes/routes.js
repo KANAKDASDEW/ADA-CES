@@ -2,15 +2,13 @@ import About from "../views/pages/About"
 import Admin from "../views/pages/admin/Admin";
 import LogIn from "../views/pages/LogIn"
 import Signup from "../views/pages/Signup"
-import Forgetpassword  from "../views/pages/Forgetpassword/Forgetpass";
+import Forgetpassword from "../views/pages/Forgetpassword/Forgetpassword";
 import Parentpage from "../views/pages/parent/Parentpage";
-import Childpage from "../views/pages/child/childpage";
-
+import Childpage from "../views/pages/child/Childpage";
 
 export  const privateRoutes=[
 
     {
-
          path:"/admin",
          name:"home",
          component:Admin,
@@ -18,7 +16,6 @@ export  const privateRoutes=[
         
     },
     {
-
          path:"/moderator",
          name:"moderator",
          component:About,
@@ -34,7 +31,6 @@ export  const privateRoutes=[
         
     },
     {
-
          path:"/child",
          name:"child",
          component:Childpage,
@@ -70,7 +66,4 @@ export const  publicRoutes=[
     role:[ "*"]
 
 },
-
-
-
 ]

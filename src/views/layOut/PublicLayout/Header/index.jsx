@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaUser } from 'react-icons/fa';
+import { FaUser } from "react-icons/fa";
 import "./header.css";
 
 const Header = () => {
@@ -16,17 +16,15 @@ const Header = () => {
                         </Link>
                     </div>
                     <div className="main_menu">
-                        <ul className="menu"> 
-                        </ul>
+                        <ul className="menu"></ul>
                     </div>
                     <div className="resister_account">
                         <span className="user">
                             <Link to="/login">
-                            <FaUser/>    
+                                <FaUser />
                             </Link>
                         </span>
                     </div>
-                   
                 </div>
             </div>
         </>

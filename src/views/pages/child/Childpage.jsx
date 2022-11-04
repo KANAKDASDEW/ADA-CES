@@ -11,8 +11,7 @@ const Childpage = () => {
     return (
         <>
             <header>
-        <div class="container-fluid header_full">
-            
+        <div class="container-fluid header_full"> 
         </div>
     </header>
     <section>
@@ -107,9 +106,9 @@ const Childpage = () => {
                                         <td>kanak Das</td>
                                         <td>kanak</td>
                                         <td>
-                                          <Link style={{margin: 5}}><FaEye/></Link>
-                                          <Link style={{margin: 5}}><FaRegTrashAlt /></Link>
-                                          <Link style={{margin: 5}}><FaEyeDropper/></Link>
+                                          <Link><FaEye/></Link>
+                                          <Link><FaRegTrashAlt /></Link>
+                                          <Link><FaEyeDropper/></Link>
                                         </td>
                                       </tr>
                                     </tbody>

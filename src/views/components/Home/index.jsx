@@ -3,9 +3,7 @@ import React from 'react';
 const HomeManin = () => {
     return (
         <div>
-
-            home components
-            
+            home components    
         </div>
     );
 };

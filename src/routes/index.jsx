@@ -5,8 +5,6 @@ import { Route, Redirect } from "react-router-dom";
 const AuthMiddleware = ({ layout:Layout, component: Page, isProtected, role, ...rest }) => {
   const {user}= useSelector(state=> state.auth)
 
-
-
 console.log(user,"")
 
   return (
@@ -25,26 +23,8 @@ console.log(user,"")
             return  <Redirect
             to={{ pathname:`/${user?.role}`, state: { from: props.location } }}
           />
-
           }
 
-          // if(!role.filter(r=>r.includes(user?.role))) { 
-            
-          //   return  <Redirect
-          //   to={{ pathname:`/not-found`, state: { from: props.location } }}
-          // />
-
-
-
-          // }   
-
-
-
-          
-
-       
-
-      
           return (
             <Layout>
               <Page {...props} />
@@ -59,9 +39,3 @@ console.log(user,"")
 
 export default AuthMiddleware;
 
-//  const AuthMiddleware = ({
-//   component: Component,
-//   layout: Layout,
-//   isAuthProtected,
-//   ...rest
-// }) => (

@@ -10,8 +10,6 @@ import { store } from '../src/Redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
-
 root.render(
 
     <Provider store={store}>

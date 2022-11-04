@@ -1,18 +1,13 @@
 
 import './App.css';
-import Home from './views/pages/Home';
-import About from './views/pages/About';
-import Header from './views/layOut/PublicLayout/Header';
-import Login from './views/pages/LogIn';
-import Signup from './views/pages/Signup';
 import { Switch, Route, Link,  BrowserRouter as Router,
 } from "react-router-dom";
-import {privateRoutes, publicRoutes} from "./routes/routes"
+import {privateRoutes, publicRoutes} from "./routes/Routes"
 import AuthMiddleware from './routes';
 import { useEffect, useState } from 'react';
 import AdminLayout from './views/layOut/AdminLayout';
 import PublicLayout from './views/layOut/PublicLayout';
-import { LOCAL_STORAGE_AUTH_KEY, LOCAL_STORAGE_KEY } from './const/const';
+import { LOCAL_STORAGE_AUTH_KEY, LOCAL_STORAGE_KEY } from './const/Const';
 import Page404 from './views/pages/Page404';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUserFromLocalStorage } from './Redux/Auth/authSlice';
